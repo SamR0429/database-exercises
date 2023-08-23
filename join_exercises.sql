@@ -20,7 +20,6 @@ where dm.to_date = '9999-01-01'
 order by d.dept_name;
 
 
-
 select d.dept_name as D_Name, CONCAT(e.first_name, ' ', e.last_name) as D_Manager
 from departments d
          join dept_manager dm
@@ -55,5 +54,3 @@ from departments d
 where dm.to_date = '9999-01-01'
 and s.to_date = '9999-01-01'
 order by s.salary desc;
-
-
