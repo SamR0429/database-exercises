@@ -42,4 +42,21 @@ create table post_categories
     constraint post_categories_category_id_fk foreign key (category_id) references categories (id)
 );
 
+insert into users
+values (1,'bob@example.com', 'password1'),
+       (2,'steve@example.com', 'password2'),
+       (3, 'sam@example.com', 'password3');
+
+insert into posts
+values (1, 'truck for sale','the truck is a 2000 ford f-150 ', 2),
+       (2, 'looking for a date', ' i need a date for prom, call for inquiries', 1);
+
+insert into categories
+values (1, 'date'),
+       (2, 'vehicle sales'),
+       (3, 'events');
+
+insert into post_categories
+values (1,2),
+       (2,1);
 
